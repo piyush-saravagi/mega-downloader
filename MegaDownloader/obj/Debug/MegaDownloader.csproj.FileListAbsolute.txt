@@ -1,0 +1,7 @@
+E:\.NET Projects\MegaDownloader\MegaDownloader\bin\Debug\MegaDownloader.exe.config
+E:\.NET Projects\MegaDownloader\MegaDownloader\bin\Debug\MegaDownloader.exe
+E:\.NET Projects\MegaDownloader\MegaDownloader\bin\Debug\MegaDownloader.pdb
+E:\.NET Projects\MegaDownloader\MegaDownloader\obj\Debug\MegaDownloader.csprojAssemblyReference.cache
+E:\.NET Projects\MegaDownloader\MegaDownloader\obj\Debug\MegaDownloader.csproj.CoreCompileInputs.cache
+E:\.NET Projects\MegaDownloader\MegaDownloader\obj\Debug\MegaDownloader.exe
+E:\.NET Projects\MegaDownloader\MegaDownloader\obj\Debug\MegaDownloader.pdb
