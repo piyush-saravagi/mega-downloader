@@ -26,6 +26,9 @@ namespace MegaDownloader
             // If file exists and it should not be replaced, return
             if (File.Exists(path) && !replace)
             {
+                Console.WriteLine("File already exists and is not being replaced");
+                Console.WriteLine("Press any key to exit");
+                Console.ReadKey();
                 return;
             }
 
