@@ -17,39 +17,20 @@ namespace MegaDownloader
 
             string url = args[0];
             string path = args[1];
+            bool replace = false;
+            if (args.Length > 2 && args[2] == "r")
+                replace = true;
 
-            // Flag for prompting the user about an exisiting file
-            bool fileReplacePrompt = true;
 
-            do
+
+            // If file exists and it should not be replaced, return
+            if (File.Exists(path) && !replace)
             {
-                //Checking if file exists
-                if (File.Exists(path))
-                {
-                    Console.WriteLine("File already exists. Do you want to replace the existing file? Y/N");
-                    char keyPressed = Console.ReadLine()[0];
-                    switch (keyPressed)
-                    {
-                        case 'N':
-                        case 'n':
-                            return;
-                        case 'Y':
-                        case 'y':
-                            fileReplacePrompt = false;
-                            break;
-                        default:
-                            Console.WriteLine("Invalid key pressed, please enter Y for yes and N for no");
-                            break;
-                    }
-                }
-                else
-                {
-                    // File does not exist, no prompt needed
-                    fileReplacePrompt = false;
-                }
+                return;
             }
-            while (fileReplacePrompt);
 
+            // File should be downloaded (and replaced if it exists)
+            
             // Handling null url
             if (url == null)
             {
