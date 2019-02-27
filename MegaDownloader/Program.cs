@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net;
 using System.IO;
+using DownloaderLibrary;
 
 namespace MegaDownloader
 {
@@ -13,33 +14,9 @@ namespace MegaDownloader
         static void Main(string[] args)
         {
             // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
-            Downloader downloader = new Downloader();
-            bool downloadResult = downloader.Download(args[0], args[1]);
-            if (downloadResult == true)
-                Console.WriteLine("Downloaded successfully.");
-            else
-                Console.WriteLine("Download failed.");
-            Console.WriteLine("Press any key to exit");
-            Console.ReadKey();
-        }
-    }
 
-    class Downloader
-    {
-        /*
-         Downloads a file from the url provided to the specified path on the local system.
-
-         Args:
-            url: URL of the file to be downloaded
-            path: Destination of the file on the local system.
-
-          Returns:
-            true if a new file is successfully downloaded, else false. Prints the reason for the failure 
-        */
-        public bool Download(string url, string path)
-        {
-
-            WebClient webClient = new WebClient();
+            string url = args[0];
+            string path = args[1];
 
             // Flag for prompting the user about an exisiting file
             bool fileReplacePrompt = true;
@@ -55,7 +32,7 @@ namespace MegaDownloader
                     {
                         case 'N':
                         case 'n':
-                            return false;
+                            return;
                         case 'Y':
                         case 'y':
                             fileReplacePrompt = false;
@@ -73,27 +50,27 @@ namespace MegaDownloader
             }
             while (fileReplacePrompt);
 
-
             // Handling null url
             if (url == null)
             {
                 Console.WriteLine("Url cannot be null");
-                return false;
+                return;
             }
 
-            //Handling download errors
+            Downloader downloader = new Downloader();
+
+            // Calling the Download function might result in a WebException. Catching such exceptions and prompting the users about it
             try
             {
-                webClient.DownloadFile(url, path);
+               downloader.Download(args[0], args[1]);
+               Console.WriteLine("Downloaded successfully.");
             }
             catch (WebException)
             {
                 Console.WriteLine("Error downloading file. Please check the url, the path and the network connection specified and try again");
-                return false;
             }
-
-
-            return true;
+            Console.WriteLine("Press any key to exit");
+            Console.ReadKey();
         }
     }
 }
