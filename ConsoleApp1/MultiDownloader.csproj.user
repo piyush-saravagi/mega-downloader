@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <StartArguments>"http://www.madeupidsi.com/file.txt" "D:\demo_data.txt" r</StartArguments>
+    <StartArguments>3 "http://www.lorempixel.com/500/500" "http://www.loremaapixel.com/500/500" "http://www.lorempixel.com/500/500" "D:\demo_data.png" "D:\demo_data_2.png" "D:\demo_data_3.png" r</StartArguments>
   </PropertyGroup>
 </Project>
