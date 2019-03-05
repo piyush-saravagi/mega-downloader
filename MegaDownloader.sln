@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MegaDownloader", "MegaDownl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownloaderLibrary", "DownloaderLibrary\DownloaderLibrary.csproj", "{2D3437BF-86B7-48E1-8F36-70B91CAE34F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiDownloader", "ConsoleApp1\MultiDownloader.csproj", "{7A29ED5D-9264-41BF-BA49-B3F3BB0C388C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiDownloader", "MultiDownloader\MultiDownloader.csproj", "{F2917AB4-4503-4B16-B31D-03DFC3FA3D62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{2D3437BF-86B7-48E1-8F36-70B91CAE34F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D3437BF-86B7-48E1-8F36-70B91CAE34F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D3437BF-86B7-48E1-8F36-70B91CAE34F1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7A29ED5D-9264-41BF-BA49-B3F3BB0C388C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7A29ED5D-9264-41BF-BA49-B3F3BB0C388C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7A29ED5D-9264-41BF-BA49-B3F3BB0C388C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7A29ED5D-9264-41BF-BA49-B3F3BB0C388C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2917AB4-4503-4B16-B31D-03DFC3FA3D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2917AB4-4503-4B16-B31D-03DFC3FA3D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2917AB4-4503-4B16-B31D-03DFC3FA3D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2917AB4-4503-4B16-B31D-03DFC3FA3D62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
