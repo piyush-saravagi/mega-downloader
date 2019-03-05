@@ -28,6 +28,7 @@ namespace MegaDownloader
             catch (WebException)
             {
                 Console.WriteLine("Error downloading file. Please check the url, the path and the network connection specified and try again");
+
             }
 
             if (downloadSuccess)

@@ -44,6 +44,7 @@ namespace DownloaderLibrary
             try
             {
                 webClient.DownloadFile(url, path);
+                return true;
             }
             finally
             {
