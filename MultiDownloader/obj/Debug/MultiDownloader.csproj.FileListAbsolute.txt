@@ -1,0 +1,10 @@
+D:\Projects\dotNET\MegaDownloader\MultiDownloader\obj\Debug\MultiDownloader.csprojAssemblyReference.cache
+D:\Projects\dotNET\MegaDownloader\MultiDownloader\obj\Debug\MultiDownloader.csproj.CoreCompileInputs.cache
+D:\Projects\dotNET\MegaDownloader\MultiDownloader\bin\Debug\MultiDownloader.exe.config
+D:\Projects\dotNET\MegaDownloader\MultiDownloader\bin\Debug\MultiDownloader.exe
+D:\Projects\dotNET\MegaDownloader\MultiDownloader\bin\Debug\MultiDownloader.pdb
+D:\Projects\dotNET\MegaDownloader\MultiDownloader\bin\Debug\DownloaderLibrary.dll
+D:\Projects\dotNET\MegaDownloader\MultiDownloader\bin\Debug\DownloaderLibrary.pdb
+D:\Projects\dotNET\MegaDownloader\MultiDownloader\obj\Debug\MultiDownloader.csproj.CopyComplete
+D:\Projects\dotNET\MegaDownloader\MultiDownloader\obj\Debug\MultiDownloader.exe
+D:\Projects\dotNET\MegaDownloader\MultiDownloader\obj\Debug\MultiDownloader.pdb
